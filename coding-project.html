@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding - My hobby</title>
+    <style>
+      body {
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/042/original/download_bckgt4.jpeg?1756649519");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    margin: 5px auto;
+    transition: all 150ms ease-in-out;
+    box-sizing: border-box;
+}
+
+
+.animated-rainbow {
+    text-align: center;
+    font-family: Arial Black, Gadget, sans-serif;
+    background: linear-gradient(to left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    background-size: 400% 100%;
+    animation: rainbow-move-left-right 7s linear infinite alternate;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes rainbow-move-left-right {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+h1 {
+    font-size: 30;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 0 0 18px 0;
+    padding: 0;
+}
+.coding-intro-img {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: all 200ms ease-in-out;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.coding-intro-img:hover {
+    filter: contrast(80%);
+    transform: scale(1.02);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.gallery img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 200ms ease-in-out;
+}
+
+.gallery img:hover {
+    filter: contrast(80%);
+    transform: scale(1.03);
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 30px 0;
+    padding: 0;
+    font-weight: normal;
+    text-align: justify;
+}
+
+button {
+    display: block;
+    background-color: transparent;
+    font-size: 16px;
+    margin: 30px auto 0 auto;
+    padding: 12px 25px;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 200ms ease-in-out;
+    color: #333;
+    
+
+}
+
+button:hover {
+    background: rgb(185, 122, 185);
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.theme-button {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: #333;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.theme-button:hover {
+    background: rgb(185, 122, 185);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.dark .container {
+    background: rgba(30, 30, 30, 0.95);
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.dark p {
+    color: #e0e0e0;
+}
+
+.dark button {
+    border-color: white;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .animated-rainbow {
+        font-size: 28px;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .coding-intro-img {
+        height: 250px;
+    }
+    
+    .gallery img {
+        height: 180px;
+    }
+}
+        p {
+            font-size: 16px;
+            color: black;  
+            line-height: 1.5;
+            margin: 10px 0;
+            padding: 0 20px;
+            font-weight: bold;
+        }
+
+        button {
+            display: block;
+            color: black;
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: bold;
+            margin: auto;
+            padding: 10px 15px;
+            border: 2px solid black;
+            border-radius: 4px;
+            transition: all 200ms ease-in-out; 
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(185, 122, 185);
+        }
+
+        button:hover {
+            background: black;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background: transparent;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 150);
+            margin: 20px auto; 
+             transition: all 150ms ease-in-out;
+            
+           
+        }
+        footer {
+            font-size: 18px;
+            padding: 10px 0;
+            text-align: center;
+            margin: 10px 0; 
+            color: white;
+        }
+        .theme-button {
+            font-size: 12px;
+            margin-bottom: 20px;
+            background: transparent;
+            color: black;
+            padding: 8px 12px;
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+    
+        }
+        .theme-button:hover {
+            background: black;
+            color: rgb(185, 122, 185);
+        }
+        .coding-intro-img {
+            border-radius: 15px;
+            margin-bottom: 5px;
+            transition: all 200ms ease-in-out;
+        }
+        .coding-intro-img:hover {
+            filter: contrast(80%);
+            transform: scale(1.05);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .gallery img {
+            border-radius: 8px;
+            width: 100%;
+            transition: all 200ms ease-in-out;
+        }
+        .gallery img:hover {
+            filter: contrast(80%);
+            transform: scale(1.05);
+        }
+        
+        .dark {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .dark .container {
+            background: rgba(30, 30, 30, 0.9);
+            color: white;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+        }
+        .dark a {
+            color: white;
+        }
+        .dark footer {
+            color: white;
+            font-size: 13;
+        }
+    </style>
+</head>
+<body>
+    
+<button class="theme-button" id="themeBtn"><span
+        style="color: rgb(185, 122, 185);">Toggle Dark Theme</span></button>
+
+    <div class="container">
+        <div class="animated-rainbow">
+            <h1>Coding</h1> 
+            <h2>Where Logic Meets Creativity</h2>
+        </div>
+
+        <a href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank">
+            <img 
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/007/original/A_3D_low-polygonal_abstract_representation_of_programming_code_symbols_form_20250830_181828_0000.jpg?1756573673"
+                alt="3D coding symbols" 
+                style="object-fit: cover;" 
+                class="coding-intro-img">
+        </a>
+        
+        <div class="gallery">
+            <img 
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/008/original/MIT-Coding-Brain-01-press_0.jpg?1756576174"
+                alt="Coding brain" style="width: 100%; height: 198px; object-fit: cover;">
+            <img 
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/009/original/coding_img.jpeg?1756581773"
+                alt="Coding image" style="width: 100%; height: 198px; object-fit: cover;">
+            <img 
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/010/original/665d96c93496f1717409481Thumb.jpg?1756586464"
+                alt="Programming" style="width: 100%; height: 198px; object-fit: cover;">
+            <img 
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/011/original/developer?1756586654.jpg"
+                alt="Developer" style="width: 100%; height: 198px; object-fit: cover;">
+        </div>
+        
+      <p>
+         Computer programming or coding is a critical skill in today's technology-driven world, enabling individuals to create
+         software, applications, and systems that drive innovation and efficiency across various industries. As a hobby, coding
+         offers a unique blend of creativity and logic, allowing enthusiasts to build projects that range from simple scripts to
+         complex applications.
+         <br><br>
+         <a href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank">Read more on Wikipedia</a>
+      </p> 
+    <button>
+    <a href="https://www.shecodes.io/products/plus-to-bootcamp" class="button-style">
+    <strong>Learn Coding</strong></button>
+</a>
+    </div>
+    
+    <footer>coded with 💖 by Prudence Masango</footer>
+
+<script>
+    function changeTheme() {
+        const body = document.querySelector('body');
+        const button = document.getElementById('themeBtn');
+
+        if (body.classList.contains('dark')) {
+            body.classList.remove('dark');
+            button.textContent = 'Toggle Dark Theme';
+        } else {
+            body.classList.add('dark');
+            button.textContent = 'Toggle Light Theme';
+        }
+    }
+
+    let themeButton = document.getElementById('themeBtn');
+    themeButton.addEventListener("click", changeTheme);
+</script>
+</body>
+</html>
